@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpRequest
+from .models import Person, Department
 import datetime
-
 
 def index(request: HttpRequest):
     title = 'главная'
@@ -98,3 +98,11 @@ def contact(request: HttpRequest):
         'visit_date': visit_date,
         'locations': locations
     })
+
+def company_index(request: HttpRequest):
+    deps = Department.objects.all()
+    pass
+
+def company_view(request: HttpRequest, id=None):
+    deps = Department.objects.get(pk=id)
+    pass
