@@ -18,6 +18,7 @@ from django.urls import path
 import mainapp.views as controller
 from django.conf import settings
 from django.conf.urls.static import static
+from django.urls import include
 
 
 
@@ -29,6 +30,7 @@ urlpatterns = [
     path('products/', controller.products, name='catalog'),
     path('contact3/', controller.contact, name='feedback'),
     path('admin/', admin.site.urls),
+    path('auth/', include('authapp.urls', namespace='auth'))
 ]
 
 if settings.DEBUG:

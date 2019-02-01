@@ -1,0 +1,20 @@
+[
+  {
+    "model": "mainapp.ProductCategory",
+    "pk": 5,
+    "fields": {
+      "id": "7",
+      "name": "Авангард",
+      "description": "ЛОРЕМтескттесттулала"
+    }
+  },
+  {
+    "model": "mainapp.ProductCategory",
+    "pk": 6,
+    "fields": {
+      "id": "8",
+      "name": "чяяяяяяя",
+      "description": "ЛОРЕМтескттесттулала123123"
+    }
+  }
+]
