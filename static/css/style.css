@@ -14,6 +14,7 @@ html, body {
 
 .clr {
 	height: 384px;
+	height: 384px;
 }
 
 .container {
@@ -82,12 +83,12 @@ html, body {
 }
 .basket {
 	display: block;
-	width: 23px;
-	height: 23px;	
+	width: 33px;
+	height: 30px;
 	background-image: url(img/basket.png);
 	position: absolute;
-	top: 63px;
-	left: 1210px;
+	top: 60px;
+	left: 1230px;
 }
 
 .clearfix:after {

@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<title>
 		 {% block title %}
-         {{ главная|title }}
+         {{ title|title }}
 		{% endblock %}
 	</title>
 
@@ -42,25 +42,21 @@
 			<div class="clearfix">
 			</div>
 			<div class="tab-content">
-				<div class="block">
-					<a href="#"><img src="{% static 'img/product-1.jpg' %}" alt="">
-						<div class="text">
-							<img src="{% static 'img/icon-hover.png' %}" alt="img">
-							<h4>Отличный стул</h4>
-							<p>Расположитесь комфортно. </p>
-						</div> 
-					</a>
-				</div>
-				<div class="block">
-					<a href="#"><img src="{% static 'img/product-2.jpg' %}" alt="">
-						<div class="text">
-							<img src="{% static 'img/icon-hover.png' %}" alt="">
-							<h4>Стул повышенного качества</h4>
-							<p>Не оторваться. </p>
-						</div>
-					</a>
-				</div>	
-			</div>
+            {% for product in products %}
+                <div class="block">
+                    <a href="#"><img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+                        <div class="text">
+                            <img src="{% static 'img/icon-hover.png' %}" alt="img">
+                            <h3>Категория:{{ product.category.name }}</h3>
+                            <h4>Название: {{ product.name }}</h4>
+                            <p>Описание: {{ product.short_descr }} </p>
+                            <p>Цена: {{ product.price }} </p>
+                            <p>На складе: {{ product.quantity }} </p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
 		</div>
 
 

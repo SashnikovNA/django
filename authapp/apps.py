@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class AuthnappConfig(AppConfig):
-    name = 'authnapp'
+class AuthappConfig(AppConfig):
+    name = 'authapp'

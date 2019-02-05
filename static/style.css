@@ -9,7 +9,7 @@ body {
 }
 
 html, body {
-	height: 90%;
+	height: 100%;
 }
 
 .clr {
@@ -17,7 +17,7 @@ html, body {
 }
 
 .container {
-	width: 1266px;
+	width: 1366px;
 	margin: 0 auto;
 	min-height: 100%;
 }
@@ -82,12 +82,12 @@ html, body {
 }
 .basket {
 	display: block;
-	width: 23px;
-	height: 23px;	
+	width: 33px;
+	height: 30px;
 	background-image: url(img/basket.png);
 	position: absolute;
-	top: 63px;
-	left: 1210px;
+	top: 60px;
+	left: 1230px;
 }
 
 .clearfix:after {
